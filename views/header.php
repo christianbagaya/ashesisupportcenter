@@ -17,9 +17,10 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"> Ashesi Support Center </a>
+            <a class="navbar-brand" href="index.php">Ashesi Support Center </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fas fa-bars"></i></span>
@@ -28,18 +29,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="admin.html">
+                        <a class="nav-link" href="admin.php">
                             Admin
                         </a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="stafflist.html">
+                        <a class="nav-link" href="staff.php">
                             Staff
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="logout.php">
+                            Logout
                         </a>
                     </li>
 
@@ -48,25 +55,3 @@
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-                <p>Not registered? sign up <a href="register.html">here</a></p>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-
-</body>

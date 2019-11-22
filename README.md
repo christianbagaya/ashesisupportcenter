@@ -23,12 +23,12 @@ return false;
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>JavaScript form validation - checking email</title>   
+<title>JavaScript form validation - checking email</title>
 </head>
 <body onload='document.form1.text1.focus()'>
 <div class="mail">
 <h2>Input an email and Submit</h2>
-<form name="form1" action="#"> 
+<form name="form1" action="#">
 <ul>
 <li><input type='text' name='text1'/></li>
 <li>&nbsp;</li>

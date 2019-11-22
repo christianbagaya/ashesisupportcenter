@@ -3,17 +3,18 @@ function ValidateEmail(inputText) {
     var mailformat = /\w+@ashesi\.edu\.gh/;
 
     if (inputText.value.match(mailformat)) {
-        document.form1.text1.focus();
+        return true;
     }
     else {
         alert("You have entered an invalid email address, use your ashesi email!");
-        document.form1.text1.focus();
+
         return false;
     }
 }
 
-
 function callValidator() {
+
     inputText = document.querySelector('#exampleInputEmail1');
-    ValidateEmail(inputText);
+
+    return ValidateEmail(inputText);
 }

@@ -1,116 +1,122 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
 
-* {
-  box-sizing: border-box;
-}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+    }
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: white;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+      background-color: white;
+    }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
 
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
+    input[type=text]:focus,
+    input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
 
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
 
-.registerbtn:hover {
-  opacity: 1;
-}
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
+    .registerbtn:hover {
+      opacity: 1;
+    }
 
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}
-/* Set a style for the submit button */
-.mybutton {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
 
-.mybutton:hover {
-  opacity: 1;
-}
-</style>
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Clent interaction</title>
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    /* Set a style for the submit button */
+    .mybutton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    .mybutton:hover {
+      opacity: 1;
+    }
+  </style>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Clent interaction</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <h1>Request Form</h1>
-    <p>Please fill this form to specify your issue</p>
-    <form action= "/action_page.php">
-      <div class="form-group">
-        <label for= "Fullname">Fullname:</label>
-        <input type="text" name="Fullname"  id="Fname" placeholder="Enter your Fullname" required>
-      </div>
-  
-      <div class="form-group">
-        <label for= "Email">Email:</label>
-        <input type="text" name="Email"  id="mail" placeholder="firstname.lastname@ashesi.edu.gh" required>
-      </div>
-      <div class="mycategory">
-        <label for="Category">Category:</label>
+</head>
+
+<body>
+  <h1>Request Form</h1>
+  <p>Please fill this form to specify your issue</p>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="Fullname">Fullname:</label>
+      <input type="text" name="Fullname" id="Fname" placeholder="Enter your Fullname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="Email">Email:</label>
+      <input type="text" name="Email" id="mail" placeholder="firstname.lastname@ashesi.edu.gh" required>
+    </div>
+    <div class="mycategory">
+      <label for="Category">Category:</label>
       <select>
         <option value="Select Category">Select Category</option>
         <option value="Teaching Staff">Teaching Staff</option>
@@ -120,16 +126,22 @@ a {
       <br>
       <br>
       <div class="Myproblem">
-        <label for= "Problem">Problem Description:</label>
-        <input type="text" name="Problem"  id="prblm" maxlength="200" required>
+        <label for="Problem">Problem Description:</label>
+        <input type="text" name="Problem" id="prblm" maxlength="200" required>
       </div>
-       <button type="submit" class="mysubmit"><a href="file:///C:/Users/hanna/Desktop/de%20MANNSHAFT/Notification.html#"> submit </a></button>
-      
-    </form>
+      <button type="submit" class="mysubmit"><a href="file:///C:/Users/hanna/Desktop/de%20MANNSHAFT/Notification.html#">
+          submit </a></button>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  </body>
+  </form>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
